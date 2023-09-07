@@ -1,0 +1,57 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.columnConfig {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  line-height: 3rem;
+}
+
+/* Remove extra left and right margins, due to padding */
+.rowConfig {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rowConfig:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.infoConfig{
+  display: flex;
+  flex-direction: column;
+}
+.info-item-left-config{
+  float: left;
+}
+.info-item-right-config{
+  float: right;
+}
+.titleConfig{
+  color: rgb(8, 142, 151);
+  font-weight: bold;
+  font-size: large;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .columnConfig {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.cardConfig {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}

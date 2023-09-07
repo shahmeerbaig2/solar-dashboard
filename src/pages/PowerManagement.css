@@ -1,0 +1,48 @@
+.table-container {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 90vh;
+}
+
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-table th,
+.my-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+td{
+  text-align: center;
+}
+
+.my-table th {
+  background-color: #f0f0f0;
+}
+
+.my-table input[type="text"] {
+  width: 100%;
+  padding: 2px;
+}
+.my-table tfoot button {
+  padding: 8px 16px;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .my-table {
+    font-size: 14px;
+  }
+
+  .my-table th,
+  .my-table td {
+    padding: 6px;
+  }
+
+  .my-table tfoot button {
+    padding: 6px 12px;
+  }
+}
